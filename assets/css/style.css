@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: #838d38;
+  --primary-color-darker:#53736A;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.527);
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado{
+  text-transform: uppercase;
+  background-color: rgb(182, 253, 182);
+  padding: 10px 20px;
+}
+
+.bad{
+  text-transform: uppercase;
+  background-color: rgb(253, 184, 182);
+  padding: 10px 20px;
+}
+
+thead td{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 0 20px 5px;
+}
+
+@media (max-width: 999px) {
+  .container{
+    max-width: 370px;
+  }
+  thead td{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0px;
+  }
+  
+  td {
+    font-size: 0.9em;
+    padding: 0 5px 2px;
+  }
+  .paragrafo-resultado{
+    text-transform: uppercase;
+    background-color: rgb(182, 253, 182);
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
